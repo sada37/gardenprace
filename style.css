@@ -127,54 +127,6 @@ li {
   display: block;
 }
 
-/* !!-header-!! */
-
-/* top */
-
-.top {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  background: white;
-  box-shadow: 0 2px 4px gray;
-  padding: 0 16px;
-}
-
-
-.main-title {
-  display: flex;
-  height: 64px;
-  gap: 16px;
-}
-
-
-.main-title img {
-  align-self: center;
-}
-
-#click {
-  align-self: center;
-  cursor: pointer;
-}
-
-#click:hover {
-  opacity: 0.7;
-}
-
-.top>a {
-  align-self: center;
-}
-
-h1 {
-  margin: 0;
-  font-size: 0.6em;
-  padding-top: 16px;
-  align-self: center;
-  font-family: GenEiKoburiMin6-R;
-}
 
 /* dt-only */
 .top-right-area {
@@ -230,7 +182,7 @@ h5 {
   bottom: auto;
   background: white;
   border: 2px solid green;
-  z-index: 2;
+  z-index: 3;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.5s;
@@ -258,7 +210,8 @@ h5 {
 #close {
   cursor: pointer;
   align-self: center;
-  margin-left: 14px;
+  margin-left: auto;
+  
 }
 
 #close:hover {
@@ -381,10 +334,62 @@ h5 {
 /* !!-menu-click-!!  ↑↑*/
 
 
+/* !!-header-!! */
+
+/* top */
+
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0 2px 4px gray;
+  padding: 0 16px;
+  z-index: 2;
+}
+
+
+.main-title {
+  display: flex;
+  height: 64px;
+  gap: 16px;
+}
+
+
+.main-title img {
+  align-self: center;
+}
+
+#click {
+  align-self: center;
+  cursor: pointer;
+}
+
+#click:hover {
+  opacity: 0.7;
+}
+
+.top>a {
+  align-self: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 0.6em;
+  padding-top: 16px;
+  align-self: center;
+  font-family: GenEiKoburiMin6-R;
+}
+
 
 
 /* head-nav */
-
+.dt-top-nav {
+  display: none;
+}
 
 /* dt-only */
 .dt-facilites {
@@ -397,7 +402,7 @@ h5 {
   align-items: center;
   justify-content: space-between;
   padding: 8px 16px;
-  margin-top: 16px;
+  margin-top: 64px;
   box-shadow: 0 2px 8px #ccc;
 }
 
@@ -603,6 +608,7 @@ h3 {
 
 dl {
   margin: 0;
+  z-index: 1;
 }
 
 dd {
@@ -785,6 +791,7 @@ small {
   /* dt-top-nav */
 
   .dt-top-nav {
+    display: block;
     text-align: center;
     border-bottom: 1px solid rgb(111, 165, 111);
     padding: 8px 0 8px;
